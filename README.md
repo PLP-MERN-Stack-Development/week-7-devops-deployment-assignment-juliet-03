@@ -1,4 +1,42 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19955182&assignment_repo_type=AssignmentRepo)
+# MERN Backend API
+
+This backend is built with Node.js, Express, and MongoDB as part of the Week 7 DevOps Deployment Assignment. It follows the MVC pattern and is ready for production deployment, CI/CD, and monitoring.
+
+## Backend Project Structure
+
+```
+backend/
+  |-- controllers/
+  |-- models/
+  |-- routes/
+  |-- middleware/
+  |-- config/
+  |-- utils/
+  |-- app.js
+  |-- server.js
+  |-- package.json
+  |-- .env.example
+```
+
+**MongoDB Atlas Setup:**
+- Use a dedicated MongoDB Atlas cluster for production.
+- Create a database user with only necessary permissions (readWrite on your database).
+- Never expose your database credentials in code or public repos.
+- Use the `MONGO_URI` environment variable to connect securely.
+
+**API Endpoints:**
+
+- `POST /api/auth/register` — Register a new user (name, email, password)
+- `POST /api/auth/login` — Login and receive JWT (email, password)
+
+**Tasks (require JWT in Authorization header):**
+- `POST /api/tasks` — Create a new task (title, description)
+- `GET /api/tasks` — Get all tasks for the logged-in user
+- `GET /api/tasks/:id` — Get a single task by ID
+- `PUT /api/tasks/:id` — Update a task by ID
+- `DELETE /api/tasks/:id` — Delete a task by ID
+
 # Deployment and DevOps for MERN Applications
 
 This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
