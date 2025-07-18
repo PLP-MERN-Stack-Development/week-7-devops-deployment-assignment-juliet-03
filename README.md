@@ -106,6 +106,10 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 5. Include screenshots of your CI/CD pipeline in action
 6. Add URLs to your deployed applications
 
+
+## Render link
+
+https://week-7-devops-deployment-assignment-3w06.onrender.com
 ## Resources
 
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
